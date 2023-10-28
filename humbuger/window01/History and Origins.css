@@ -145,3 +145,40 @@
     margin: 10px 0 0 0;
     font-weight: normal;
 }
+
+.footer {
+    padding: 95px;
+    text-align: center;
+}
+
+.footer a {
+    color: #999;
+    display: inline-block;
+}
+
+@media only screen and (max-width: 767px) {
+    .item {
+        align-self: baseline !important;
+        width: 100%;
+        padding: 0 30px 150px 80px;
+    }
+
+    .item:before {
+        left: 10px !important;
+        padding: 0 !important;
+        top: 50px;
+        text-align: center !important;
+        width: 60px;
+        border: none !important;
+    }
+
+    .item:last-child {
+        padding-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .timeline:before {
+        left: 40px;
+    }
+}
