@@ -49,6 +49,15 @@ $(document).ready(function() {
         }, 500);  
     });
 });
+$(document).ready(function() {
+    // 当点击导航项时
+    $('.navbar-nav .nav-item .nav-link').on('click', function() {
+        // 移除先前项的激活状态
+        $('.navbar-nav .nav-item .nav-link').removeClass('active-nav-link');
+        // 为当前点击的项添加激活状态
+        $(this).addClass('active-nav-link');
+    });
+});
 
 
 
