@@ -53,6 +53,7 @@ body {
 }
 
 body {
+    background-image: url('../img/BG02.png'); /* 添加背景图片 */
     font-family: Arial, sans-serif;
     padding-top: 60px; /* space for fixed navbar */
 }
@@ -62,6 +63,7 @@ body {
     background: linear-gradient(to right, #8C6334, #A67C52); /* gradient background */
     padding: 10px 0;
     position: fixed;
+    top: 0; 
     width: 100%;
     z-index: 1000;
 }

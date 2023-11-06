@@ -1,10 +1,18 @@
 document.addEventListener('DOMContentLoaded', function() {
     let container = document.querySelector('.container');
+    container.classList.add('animated');
 
-    // Simple fade-in and slide-in animation for the container
-    setTimeout(() => {
-        container.style.opacity = '1';
-        container.style.transform = 'translateY(0)';
-    }, 500);
+    // Smooth scrolling for navbar links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
 });
+
+
 
