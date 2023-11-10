@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Do you like hamburgers?</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="window style01.css">
+
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #8C6334;">
+        <a class="navbar-brand text-white" href="#">Hamburger Love</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link text-white" href="History and Origins.html">History and Origins <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="Preparation and Ingredients.html">Preparation and Ingredients</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="Culture and Impact.html">Culture and Impact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="Tasting and Evaluation.html">Order</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+<!-- 模态对话框的结构 -->
+<div class="modal fade" id="confirmationModal" tabindex="-1" role="dialog" aria-labelledby="confirmationModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="confirmationModalLabel">what about you?</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Welcome to this website about hamburgers!</p>
+                <p>Do you like hamburgers?</p>
+            </div>
+            <div class="modal-body2 d-none" id="modalBodyText2">
+                <p>Are you really sure you don't like hamburgers?</p>
+            </div>
+            
+            <div class="modal-footer">
+                <button id="YES" type="button" class="btn btn-secondary">YES ,I like it!</button>
+                <button id="NO" type="button" class="btn btn-primary">NO</button>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+<div id="pageContent" class="d-none">
+    <div class="mine">
+
+        <a href="History and Origins.html" class="card">
+            <div class="box">
+                <img src="../img/1.01.png" alt="">
+            </div>
+            <div class="character">
+                <img src="../img/1.01.png" alt="">
+            </div>
+            <h4>History and Origins</h4>
+        </a>
+
+        <a href="Preparation and Ingredients.html" class="card">
+            <div class="box">
+                <img src="../img/1.02.png" alt="">
+            </div>
+            <div class="character">
+                <img src="../img/1.02.png" alt="">
+            </div>
+            <h4>Preparation and Ingredients</h4>
+        </a>
+
+        <a href="Culture and Impact.html" class="card">
+            <div class="box">
+                <img src="../img/1.03.png" alt="">
+            </div>
+            <div class="character">
+                <img src="../img/1.03.png" alt="">
+            </div>
+            <h4>Culture and Impact</h4>
+        </a>
+
+        <a href="Tasting and Evaluation.html" class="card">
+            <div class="box">
+                <img src="../img/1.04.png" alt="">
+            </div>
+            <div class="character">
+                <img src="../img/1.04.png" alt="">
+            </div>
+            <h4>Order</h4>
+        </a>
+
+    </div>
+</div>
+
+
+<!-- 引入 Bootstrap JavaScript, 依赖库 和 JavaScript -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="wandow01.js"></script>
+
+</body>
+</html>

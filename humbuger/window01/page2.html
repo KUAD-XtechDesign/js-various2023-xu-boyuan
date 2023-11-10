@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Special Message</title>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+}
+
+.centered {
+  text-align: center;
+}
+
+.message {
+  color: white;
+  font-size: 2em;
+}
+
+.message2 {
+  color: red;
+  font-size: 3em;
+  font-weight: bold;
+  display: none; 
+}
+</style>
+</head>
+<body>
+
+<div id="message1" class="centered message"></div>
+<div id="message2" class="centered message2"></div>
+
+<script>
+var index = 0; 
+const message1Text = "You are not allowed to enter my world!";
+const message2Text = "You freak!!!!!!!!!!!!";
+const typeSound = new Audio('./typewriter-key-1.mp3'); 
+
+function typeWriter() {
+  if (index < message1Text.length) {
+    document.getElementById("message1").innerHTML += message1Text.charAt(index);
+    typeSound.play();
+    index++;
+    setTimeout(typeWriter, 100);
+  } else {
+    // 打字结束后停止音频
+    typeSound.pause();
+    typeSound.currentTime = 0;
+    
+    window.addEventListener('wheel', function() {
+      document.getElementById("message1").style.display = 'none';
+      const message2 = document.getElementById("message2");
+      if (!message2.style.display || message2.style.display === 'none') {
+        message2.innerHTML = message2Text;
+        message2.style.display = 'block'; 
+      }
+    });
+  }
+}
+
+
+typeWriter();
+
+</script>
+</body>
+</html>
+
+
