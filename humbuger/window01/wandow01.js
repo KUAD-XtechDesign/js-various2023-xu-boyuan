@@ -41,7 +41,7 @@ $(document).ready(function() {
         $('#confirmationModal').modal('hide');  
         setTimeout(function() { 
             if (showModalTimes < 4) {
-                showModal();  // If the display count is less than 4 times, re-display the modal dialog.
+                showModal();  
             } else {
                 showModal();  
                 window.location.href = './page2.html';  
@@ -50,11 +50,11 @@ $(document).ready(function() {
     });
 });
 $(document).ready(function() {
-    // 当点击导航项时
+    
     $('.navbar-nav .nav-item .nav-link').on('click', function() {
-        // 移除先前项的激活状态
+        
         $('.navbar-nav .nav-item .nav-link').removeClass('active-nav-link');
-        // 为当前点击的项添加激活状态
+        
         $(this).addClass('active-nav-link');
     });
 });

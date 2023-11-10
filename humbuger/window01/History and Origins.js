@@ -7,13 +7,12 @@
             img: ".img"
         };
 
-        // Initialize the background and active class
+        
         selectors.items.eq(0).addClass(selectors.activeClass);
         setBlurBackground(selectors.items.first().find(selectors.img).attr("src"));
 
         $(window).scroll(function() {
-            var pos = $(this).scrollTop() + $(window).height() / 2;  // Calculate the middle position
-
+            var pos = $(this).scrollTop() + $(window).height() / 2;  
             selectors.items.each(function() {
                 var $this = $(this);
                 var min = $this.offset().top;

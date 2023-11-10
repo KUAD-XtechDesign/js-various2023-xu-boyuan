@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     sections.forEach((section, index) => {
         setTimeout(() => {
             section.classList.add('animated');
-        }, index * 500); // 每个部分延迟500毫秒开始动画
+        }, index * 500); 
     });
 
     function updateBackground(section) {

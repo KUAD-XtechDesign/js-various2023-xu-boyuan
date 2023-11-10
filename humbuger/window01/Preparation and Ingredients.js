@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let container = document.querySelector('.container');
     container.classList.add('animated');
 
-    // Smooth scrolling for navbar links
+    
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();

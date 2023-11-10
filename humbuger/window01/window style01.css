@@ -40,10 +40,10 @@
     text-align: center;      
     line-height: 50px;       
     padding: 0;
-    border-radius: 10px;     /* Add rounded corners */       
+    border-radius: 10px;   
     }
 #YES:hover {
-    background-color: #FFF2AD; /* Slightly change the background color when mouse hovers */
+    background-color: #FFF2AD; 
 }
 #NO {
     background-color: #FFF2AD; 
@@ -66,10 +66,10 @@
     justify-content: space-between; 
 }
 body {
-    background-image: url('../img/BG02.png'); /* 添加背景图片 */
-    background-size: cover; /* 确保背景图片覆盖整个视窗 */
-    background-repeat: no-repeat; /* 防止背景图片重复 */
-    background-position: center; /* 使背景图片居中 */
+    background-image: url('../img/BG02.png'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -83,8 +83,8 @@ body {
     margin: 0 auto;
     height: 750px;
     display: flex;
-    justify-content: center;  /* 水平居中 */
-    align-items: center;      /* 垂直居中 */
+    justify-content: center;  
+    align-items: center;   
     flex-wrap: wrap; 
 }
 
@@ -176,20 +176,20 @@ body {
 
 
 .navbar {
-    background-color: #8C6334; /* 设置导航栏的背景色 */
+    background-color: #8C6334; 
 }
 
 .navbar .navbar-brand,
 .navbar .nav-link {
-    color: #fff; /* 设置文本颜色为白色 */
+    color: #fff; 
 }
 
 .navbar .nav-link:hover,
 .navbar .nav-link:focus {
-    color: #ccc; /* 鼠标悬停或聚焦时的文本颜色 */
+    color: #ccc; 
 }
 
-/* 当在移动设备上时，导航栏汉堡菜单的按钮颜色 */
+
 .navbar-toggler {
     border-color: rgba(255,255,255,.1);
 }
@@ -198,7 +198,7 @@ body {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-/* 响应式布局下的下拉菜单的背景色 */
+
 @media (max-width: 991px) {
     .navbar-collapse {
         background-color: #8C6334;

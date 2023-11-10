@@ -94,19 +94,19 @@ body {
     color: #fff;
     text-decoration: none;
     padding: 5px 10px;
-    transition: background-color 0.3s, color 0.3s, transform 0.3s; /* add color and transform to the transition */
+    transition: background-color 0.3s, color 0.3s, transform 0.3s; 
 }
 
 .nav-link:hover, .nav-link:focus {
-    background-color: #7A5649; /* darker shade for hover/focus */
-    color: #F3ECE7; /* lighter color text */
-    transform: scale(1.1); /* slight growth */
+    background-color: #7A5649; 
+    color: #F3ECE7; 
+    transform: scale(1.1); 
     border-radius: 5px;
 }
 
 .nav-link.active {
-    color: #F3ECE7; /* active link color */
-    background-color: #6D4C41; /* active link background color */
+    color: #F3ECE7; 
+    background-color: #6D4C41; 
 }
 
 .main-content {
